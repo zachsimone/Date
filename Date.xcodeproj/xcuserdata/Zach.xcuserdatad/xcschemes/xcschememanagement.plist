@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>DateWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>92FDD93B1D2FC4AB0099EF06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92FDD9511D2FC4BC0099EF06</key>
 		<dict>
 			<key>primary</key>
 			<true/>

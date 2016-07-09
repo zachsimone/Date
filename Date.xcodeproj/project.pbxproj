@@ -15,6 +15,10 @@
 		92FDD92B1D2FC4AA0099EF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDD9291D2FC4AA0099EF06 /* LaunchScreen.storyboard */; };
 		92FDD9361D2FC4AB0099EF06 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDD9351D2FC4AB0099EF06 /* DateTests.swift */; };
 		92FDD9411D2FC4AB0099EF06 /* DateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDD9401D2FC4AB0099EF06 /* DateUITests.swift */; };
+		92FDD9551D2FC4BC0099EF06 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FDD9541D2FC4BC0099EF06 /* NotificationCenter.framework */; };
+		92FDD9581D2FC4BC0099EF06 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDD9571D2FC4BC0099EF06 /* TodayViewController.swift */; };
+		92FDD95B1D2FC4BC0099EF06 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDD9591D2FC4BC0099EF06 /* MainInterface.storyboard */; };
+		92FDD95F1D2FC4BC0099EF06 /* DateWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92FDD9521D2FC4BC0099EF06 /* DateWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = 92FDD9191D2FC4AA0099EF06;
 			remoteInfo = Date;
 		};
+		92FDD95D1D2FC4BC0099EF06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92FDD9121D2FC4AA0099EF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92FDD9511D2FC4BC0099EF06;
+			remoteInfo = DateWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92FDD9631D2FC4BC0099EF06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92FDD95F1D2FC4BC0099EF06 /* DateWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		92FDD91A1D2FC4AA0099EF06 /* Date.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Date.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +74,11 @@
 		92FDD93C1D2FC4AB0099EF06 /* DateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FDD9401D2FC4AB0099EF06 /* DateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUITests.swift; sourceTree = "<group>"; };
 		92FDD9421D2FC4AB0099EF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FDD9521D2FC4BC0099EF06 /* DateWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DateWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FDD9541D2FC4BC0099EF06 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		92FDD9571D2FC4BC0099EF06 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		92FDD95A1D2FC4BC0099EF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		92FDD95C1D2FC4BC0099EF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +103,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92FDD94F1D2FC4BC0099EF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDD9551D2FC4BC0099EF06 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +120,8 @@
 				92FDD91C1D2FC4AA0099EF06 /* Date */,
 				92FDD9341D2FC4AB0099EF06 /* DateTests */,
 				92FDD93F1D2FC4AB0099EF06 /* DateUITests */,
+				92FDD9561D2FC4BC0099EF06 /* DateWidget */,
+				92FDD9531D2FC4BC0099EF06 /* Frameworks */,
 				92FDD91B1D2FC4AA0099EF06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +132,7 @@
 				92FDD91A1D2FC4AA0099EF06 /* Date.app */,
 				92FDD9311D2FC4AB0099EF06 /* DateTests.xctest */,
 				92FDD93C1D2FC4AB0099EF06 /* DateUITests.xctest */,
+				92FDD9521D2FC4BC0099EF06 /* DateWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +169,24 @@
 			path = DateUITests;
 			sourceTree = "<group>";
 		};
+		92FDD9531D2FC4BC0099EF06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FDD9541D2FC4BC0099EF06 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92FDD9561D2FC4BC0099EF06 /* DateWidget */ = {
+			isa = PBXGroup;
+			children = (
+				92FDD9571D2FC4BC0099EF06 /* TodayViewController.swift */,
+				92FDD9591D2FC4BC0099EF06 /* MainInterface.storyboard */,
+				92FDD95C1D2FC4BC0099EF06 /* Info.plist */,
+			);
+			path = DateWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +197,12 @@
 				92FDD9161D2FC4AA0099EF06 /* Sources */,
 				92FDD9171D2FC4AA0099EF06 /* Frameworks */,
 				92FDD9181D2FC4AA0099EF06 /* Resources */,
+				92FDD9631D2FC4BC0099EF06 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				92FDD95E1D2FC4BC0099EF06 /* PBXTargetDependency */,
 			);
 			name = Date;
 			productName = Date;
@@ -184,6 +245,23 @@
 			productReference = 92FDD93C1D2FC4AB0099EF06 /* DateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		92FDD9511D2FC4BC0099EF06 /* DateWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92FDD9601D2FC4BC0099EF06 /* Build configuration list for PBXNativeTarget "DateWidget" */;
+			buildPhases = (
+				92FDD94E1D2FC4BC0099EF06 /* Sources */,
+				92FDD94F1D2FC4BC0099EF06 /* Frameworks */,
+				92FDD9501D2FC4BC0099EF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateWidget;
+			productName = DateWidget;
+			productReference = 92FDD9521D2FC4BC0099EF06 /* DateWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +292,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 92FDD9191D2FC4AA0099EF06;
 					};
+					92FDD9511D2FC4BC0099EF06 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RA2366999U;
+						DevelopmentTeamName = "Zachary Simone";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 92FDD9151D2FC4AA0099EF06 /* Build configuration list for PBXProject "Date" */;
@@ -232,6 +316,7 @@
 				92FDD9191D2FC4AA0099EF06 /* Date */,
 				92FDD9301D2FC4AB0099EF06 /* DateTests */,
 				92FDD93B1D2FC4AB0099EF06 /* DateUITests */,
+				92FDD9511D2FC4BC0099EF06 /* DateWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +343,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDD9501D2FC4BC0099EF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDD95B1D2FC4BC0099EF06 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +383,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92FDD94E1D2FC4BC0099EF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDD9581D2FC4BC0099EF06 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +403,11 @@
 			isa = PBXTargetDependency;
 			target = 92FDD9191D2FC4AA0099EF06 /* Date */;
 			targetProxy = 92FDD93D1D2FC4AB0099EF06 /* PBXContainerItemProxy */;
+		};
+		92FDD95E1D2FC4BC0099EF06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92FDD9511D2FC4BC0099EF06 /* DateWidget */;
+			targetProxy = 92FDD95D1D2FC4BC0099EF06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -320,6 +426,14 @@
 				92FDD92A1D2FC4AA0099EF06 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92FDD9591D2FC4BC0099EF06 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92FDD95A1D2FC4BC0099EF06 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,6 +529,7 @@
 		92FDD9461D2FC4AB0099EF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Date/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,6 +542,7 @@
 		92FDD9471D2FC4AB0099EF06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Date/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -486,6 +602,30 @@
 			};
 			name = Release;
 		};
+		92FDD9611D2FC4BC0099EF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DateWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachsim.one.Date.DateWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		92FDD9621D2FC4BC0099EF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DateWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zachsim.one.Date.DateWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -519,6 +659,14 @@
 			buildConfigurations = (
 				92FDD94C1D2FC4AB0099EF06 /* Debug */,
 				92FDD94D1D2FC4AB0099EF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		92FDD9601D2FC4BC0099EF06 /* Build configuration list for PBXNativeTarget "DateWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FDD9611D2FC4BC0099EF06 /* Debug */,
+				92FDD9621D2FC4BC0099EF06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

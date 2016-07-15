@@ -13,20 +13,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet var date: UILabel!
     
+    let dataInfo = DateUpdater()
         
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
-        
-        let dateFormatter = DateFormatter()
-        
-        dateFormatter.locale = Locale.current
-        
-        let currentDate = NSDate()
-        dateFormatter.dateStyle = DateFormatter.Style.full
-        let today = dateFormatter.string(from: currentDate as Date)
-        
-        date.text = String(today)
+        date.text = dataInfo.update()
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,7 +28,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-        
+        date.text = dataInfo.update()
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData

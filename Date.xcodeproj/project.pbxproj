@@ -19,6 +19,7 @@
 		92FDD9581D2FC4BC0099EF06 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDD9571D2FC4BC0099EF06 /* TodayViewController.swift */; };
 		92FDD95B1D2FC4BC0099EF06 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDD9591D2FC4BC0099EF06 /* MainInterface.storyboard */; };
 		92FDD95F1D2FC4BC0099EF06 /* DateWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92FDD9521D2FC4BC0099EF06 /* DateWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		92FDD9651D33225C0099EF06 /* DateUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDD9641D33225C0099EF06 /* DateUpdate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		92FDD9571D2FC4BC0099EF06 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		92FDD95A1D2FC4BC0099EF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		92FDD95C1D2FC4BC0099EF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FDD9641D33225C0099EF06 /* DateUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUpdate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				92FDD9571D2FC4BC0099EF06 /* TodayViewController.swift */,
+				92FDD9641D33225C0099EF06 /* DateUpdate.swift */,
 				92FDD9591D2FC4BC0099EF06 /* MainInterface.storyboard */,
 				92FDD95C1D2FC4BC0099EF06 /* Info.plist */,
 			);
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FDD9651D33225C0099EF06 /* DateUpdate.swift in Sources */,
 				92FDD9581D2FC4BC0099EF06 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

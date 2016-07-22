@@ -14,11 +14,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet var date: UILabel!
     
     let dataInfo = DateUpdater()
-        
+
+    func reload() {
+        date.text = dataInfo.update()
+        print("Updating label ...")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
-        date.text = dataInfo.update()
+        
+        reload()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,7 +35,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-        date.text = dataInfo.update()
+        
+        reload()
+        
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
